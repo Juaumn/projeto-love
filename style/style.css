@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Romanesco&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+
+:root {
+    --font1: 'Romanesco', cursive;
+    --font2: 'Loved by the King', cursive;
+    --font3: 'Love Light', cursive;
+}
+
+*{
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgba(29, 208, 253, 0.747), rgb(253, 24, 150));
+    color: red;
+    min-height: 200px;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.582);
+}
+header h1 {
+    font-family: var(--font1);
+    padding-top: 30px;
+    font-size: 9vw;
+    font-variant: small-caps;
+    margin: 0px 5px 0px 5px;
+    
+}
+header p {
+    padding: 20px;
+    font-size: 4vw;
+    font-family: var(--font1);
+}
+
+article.normal {
+    background-color: bisque;
+    color: black;
+    text-indent: 10px;
+    padding: 30px;
+}
+article.normal > p {
+    padding-top: 30px;
+    font-family: var(--font3);
+}
+article#texto {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    padding-bottom: 90px;
+    padding-top: 60px;
+}
+
+
+
+
+article.imagem {
+    text-indent: 10px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.61);
+}
+
+article.imagem > section {
+    background-color: rgba(199, 198, 198, 0.336);
+    display: inline-block;
+    max-width: 70vw;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.527);
+    padding: 15px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+article.imagem > section > p {
+    padding-top: 20px;
+    color: white;
+    text-shadow:1.5px 1.5px 2px black;
+    font-family: var(--font2);
+}
+
+article#img01 {
+    background-image: url(../img/foto\ amor\ \(3\).jpg);
+}
+
+article#img02 {
+    background-image: url(../img/v1.png);
+}
+
+article#img03 {
+    background-image: url(../img/v2.png);
+}
+
+article#img04 {
+    background-image: url(../img/v3.png);
+}
+
+article#img05 {
+    background-image: url(../img/foto\ amor\ \(3\).webp);
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
