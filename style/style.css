@@ -2,14 +2,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Romanesco&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
 
 :root {
     --font1: 'Romanesco', cursive;
-    --font2: 'Loved by the King', cursive;
-    --font3: 'Love Light', cursive;
+    --font3: 'Beau Rivage', cursive;
+    --font2: 'Freehand', cursive;
+    --font4: 'Alkatra', cursive; 
+
 }
 
 *{
@@ -23,25 +27,29 @@ html, body {
     color: white;
 }
 
+cite {
+    font-size: 0.8em;
+}
+
 header {
     background-image: linear-gradient(to bottom, rgba(29, 208, 253, 0.747), rgb(253, 24, 150));
     color: red;
-    min-height: 200px;
+    min-height: 220px;
     text-align: center;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.582);
 }
 header h1 {
-    font-family: var(--font1);
+    font-family: var(--font2);
     padding-top: 30px;
-    font-size: 9vw;
+    font-size: 11vw;
     font-variant: small-caps;
     margin: 0px 5px 0px 5px;
     
 }
 header p {
     padding: 20px;
-    font-size: 4vw;
-    font-family: var(--font1);
+    font-size: 6vw;
+    font-family: var(--font2);
 }
 
 article.normal {
@@ -52,17 +60,14 @@ article.normal {
 }
 article.normal > p {
     padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: var(--font4);
+    font-size: 1.3em;
+}
+p#texto {
     font-family: var(--font3);
+    font-size: 2.2em;
 }
-article#texto {
-    text-align: justify;
-    text-indent: 30px;
-    line-height: 2em;
-    padding-bottom: 90px;
-    padding-top: 60px;
-}
-
-
 
 
 article.imagem {
@@ -85,14 +90,16 @@ article.imagem > section {
     padding: 15px;
     padding-bottom: 30px;
     border-radius: 5px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
+
 article.imagem > section > p {
     padding-top: 20px;
     color: white;
-    text-shadow:1.5px 1.5px 2px black;
-    font-family: var(--font2);
+    text-shadow:2px 2px 4px black;
+    font-family: var(--font1);
+    font-size: 2em;
 }
 
 article#img01 {
@@ -114,9 +121,24 @@ article#img04 {
 article#img05 {
     background-image: url(../img/foto\ amor\ \(3\).webp);
 }
-
+h3 {
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
 footer {
     text-align: center;
     font-weight: bold;
     padding: 20px;
+}
+h3 > a:hover {
+    background-color: black;
+    border-radius: 5px;
+    padding: 13px;
+    color: white;
+    transition: 0.8s;
+}
+p > a:hover {
+    text-decoration: underline;
+    color: yellow;
 }
