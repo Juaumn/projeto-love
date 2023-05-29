@@ -145,6 +145,6 @@ p > a:hover {
 audio {
     display: block;
     margin: auto;
-    margin-top: 20px;
-    size: px;
+    height: 5vh;
+    width: 60vw;
 }
