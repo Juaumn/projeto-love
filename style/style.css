@@ -142,3 +142,8 @@ p > a:hover {
     text-decoration: underline;
     color: yellow;
 }
+audio {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
